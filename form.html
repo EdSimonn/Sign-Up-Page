@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <h1>Social media shared today, tomorrow or by location</h1>
+        <div class="circle"></div>
+        <!-- Added Circle -->
+        <div class="phones">
+          <img src="./images/img-one.png" alt="Phones" />
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="form-container">
+          <div class="logo">
+            <img src="./images/img-three.png" alt="Capzul Logo" />
+            <h4>Capzul</h4>
+          </div>
+
+          <div class="title">
+            <h2>Create account</h2>
+            <p>For business, band or celebrity.</p>
+          </div>
+
+          <form id="signup-form">
+            <div class="form-group">
+              <div>
+                <label for="first-name">First name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="first-name">Last name</label>
+
+                <input
+                  type="text"
+                  id="last-name"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="first-name">Email or phone number</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email or phone number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="first-name">Date of birth (MM/DD/YY)</label>
+                <input
+                  type="date"
+                  id="dob"
+                  placeholder="Date of birth (mm/dd/yy)"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="first-name">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div>
+                <label for="first-name">Confirm password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+            </div>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="remember-me" />
+                Remember me
+              </label>
+              <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="terms" required />
+                I agree to all the <a href="#">Terms and Privacy policy</a>
+              </label>
+            </div>
+            <div class="btn">
+              <button type="submit" class="create-account">
+                Create account
+              </button>
+              <button type="button" class="google-signup">
+                <img src="./images/img-five.png" alt="Google Play" />
+                <p>Sign-in with Google</p>
+              </button>
+            </div>
+          </form>
+          <p class="login-link">
+            Don't have an account? <a href="#">Log in</a>
+          </p>
+          <div class="download-links">
+            <img src="./images/googleplay.png" alt="Google Play" />
+            <img src="./images/appstore.png" alt="App Store" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

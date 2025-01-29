@@ -1,0 +1,268 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2e8cfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+  background: linear-gradient(to bottom, #007aff, #0f70da);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 90px;
+  text-align: center;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #007aff, #0f70da);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  opacity: 0.8;
+  z-index: 0;
+  box-shadow: 0 1px 1px rgba(0, 20, 50, 0.2), 0 4px 10px rgba(0, 0, 255, 0.4); /* Dark blue shadow */
+  backdrop-filter: blur(100px);
+}
+
+.phones {
+  position: relative;
+  z-index: 1;
+}
+
+.phones img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-section h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.logo img {
+  width: 29.52px;
+  height: 33.87px;
+}
+
+.logo h4 {
+  font-size: 12.7px;
+}
+
+.title {
+  margin: 24px 0;
+}
+
+.title h2 {
+  font-size: 19.76px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.title p {
+  font-size: 9.88px;
+  margin: 0;
+  line-height: 1;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.form-group > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 9.88px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 9.88px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 9.88px;
+}
+
+.checkbox-group a {
+  color: #2e8cfd;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  gap: 16px;
+}
+
+button.create-account {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e8cfd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 9.88px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.google-signup {
+  width: 100%;
+  padding: 0px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 9.88px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-signup img {
+  width: 16px;
+  height: 16px;
+}
+
+.download-links {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+}
+
+.download-links img {
+  max-width: 100px;
+}
+
+.login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.login-link a {
+  color: #2e8cfd;
+  text-decoration: none;
+}
+
+@media (max-width: 1160px) {
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e8cfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin: 40px 0;
+  }
+
+  .left-section {
+    padding: 40px 70px;
+  }
+
+  .left-section h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .google-signup {
+    justify-content: center;
+    padding: 0px;
+  }
+}
